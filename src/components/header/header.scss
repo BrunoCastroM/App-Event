@@ -1,0 +1,34 @@
+@import '../../styles/global.scss';
+
+.header {
+  height: 78px;
+  padding: 0px 58px;
+  background-color: $secundary-bg;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  .title {
+    color: $main-color-font;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: $secundary-font;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+  }
+  
+  .link {
+    color: $main-color-font;
+    margin-left: 32px;
+    font-weight: 500;
+    font-family: $secundary-font;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    opacity: 0.8;
+
+    &:hover {
+      transition: all ease-in-out 200ms;
+      opacity: 1.1;
+    }
+  }
+}

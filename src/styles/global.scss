@@ -1,0 +1,36 @@
+// background
+$main-bg: #a5a58d;
+$secundary-bg: #323232;
+
+// Font color
+$main-color-font: #ededed;
+$secundary-color-font: #000;
+
+// Button color
+$soft-color: #ffe8d6;
+
+// font
+$main-font: 'DM Sans', sans-serif;
+$secundary-font: 'Staatliches', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: $main-font, sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: $main-bg;
+  
+
+  .main-container {
+    max-width: 1060px;
+    margin: 0 auto;
+    font-weight: 500;
+    
+  }
+}
