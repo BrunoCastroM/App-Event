@@ -1,27 +1,29 @@
 import { useState, useEffect } from 'react';
-import './home.scss';
 import api from '../service/api';
 import formatDate from '../assets/formatDate';
+import './home.scss';
 
 export default function Home() {
   const [events, setEvents] = useState([]);
 
-  const getEvents = async () => {
-    try {
-      const response = await api.get('/event');
-      const { data } = response;
-      setEvents(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   useEffect(() => {
+    const getEvents = async () => {
+      try {
+        const response = await api.get('/event');
+
+        const { data } = response;
+        
+        setEvents(data);
+      } catch (error) {
+        console.error('Erro ao obter categorias e localizações:', error);
+      }
+    };
+
     getEvents();
   }, []);
 
   return (
-    <div className="container">
+    <div className="home-container">
       <h1>Eventos recentes</h1>
 
       <table>
