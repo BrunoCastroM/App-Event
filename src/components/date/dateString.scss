@@ -1,0 +1,24 @@
+@import '../../styles/global.scss';
+
+.date-string {
+  p {
+    text-align: center;
+  }
+  .day {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+    display: block;
+    margin-top: 2px;
+  }
+  .mouth {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #999;
+    display: block;
+    margin-top: 4px;
+  }
+}
