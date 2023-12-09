@@ -19,7 +19,7 @@ export default function EventCard({ event }) {
         </span>
         <div>
           <p className="title">{event.name}</p>
-          <div className="containerDetals">
+          <div className="containerDetails">
             <p>{event.location.name}</p>
             <p>{formatDate(event.date)}</p>
             <p>{event.category.name}</p>

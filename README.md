@@ -1,12 +1,10 @@
 # App-Event
 
-# Este é o front-end da API Event
+# Este é o front-end da API-Event
 
-Para baixar a API clique no link: [https://github.com/BrunoCastroM/Event-API](https://github.com/BrunoCastroM/Event-API)
+## Para usar esse aplicativo você deve antes:
 
-## Para usar esse aplicativo você deve:
-
-1. Baixar o Event-API e fazer os seguintes passos:
+1. Baixar o Event-API e fazer os seguintes passos (clique no link para baixar): [https://github.com/BrunoCastroM/Event-API](https://github.com/BrunoCastroM/Event-API)):
     1. Deixar somente o nome ".env" em vez de ".env.example"
     2. Instalar o docker na sua máquina
     3. Abra o projeto e digite o comando: `docker compose up` (Esse comando serve para iniciar os serviços definidos em no arquivo **docker-compose.yml**)
@@ -160,11 +158,11 @@ Para baixar a API clique no link: [https://github.com/BrunoCastroM/Event-API](ht
             - **address**: Endereço da localização.
             - **events**: Lista de eventos relacionados à localização.
             - **created_at**: Data e hora de criação da localização (valor definido para o momento atual).
-2. Agora em com todas as informações da API passadas. Podemos baixar a esse parte do front-end dela.
+2. Agora com todas as informações da API passadas. Podemos baixar essa aplicação.
 3. Abrindo em um editor de código você deve digitar o comando `npm install`.
-4. Despois de instalado todos os pacotes necessários você deve usar o comando: `npm run dev`.
+4. Depois de instalado todos os pacotes necessários você deve usar o comando: `npm run dev`.
 5. Depois disso é so pegar o link e colocar no seu browser, para ver a aplicação funcionando.
 6. Informações sobre a aplicação:
-    1. Está aplicação foi feita para consumir a API-Event. Ela tem uma página principal descrevendo os eventos cadastrados na aplicação back-end. Nela você ve a data que o evento irá ocorrer, nome, local, hora, categoria, e um botão com mostrando para mostrar a descrição do evento.
-    2. A página “buscar evento” você consegue selecionar fazer uma busca pelos eventos já cadastrados por nome, categoria, e data.
-    3. Já a página de “criar evento” como o nome já diz, você consegue criar um evento, de acordo com as necessidades dos campos, ou seja, é necessário você criar antes um local e uma categoria na api, para conseguir selecionar alguma categoria e local na apliacação front-end.
+    1. Esta aplicação foi desenvolvida para consumir a API-Event. Ela possui uma página principal que descreve os eventos cadastrados no backend da aplicação. Nela, você pode visualizar a data em que o evento ocorrerá, o nome, o local, a hora, a categoria e um botão que permite mostrar a descrição do evento.
+    2. Na página “buscar evento” você consegue selecionar eventos por nome, categoria, data e local e fazer uma busca pelos eventos já cadastrados.
+    3. Já a página de “criar evento” como o nome já diz, você consegue criar um evento, de acordo com as necessidades dos campos. **OBS:** É necessário você criar antes um local e uma categoria na api, para conseguir selecionar alguma categoria e local na apliacação front-end.

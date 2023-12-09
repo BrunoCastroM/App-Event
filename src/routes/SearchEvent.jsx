@@ -32,9 +32,11 @@ export default function SearchEvent() {
     if (e.target.value === 'event') {
       setPlaceholder('Buscar por nome');
     } else if (e.target.value === 'category') {
-      setPlaceholder('');
+      setPlaceholder('Buscar por categoria');
     } else if (e.target.value === 'date') {
       setPlaceholder('');
+    } else if (e.target.value === 'location') {
+      setPlaceholder('Buscar por local');
     }
   };
 
@@ -67,15 +69,24 @@ export default function SearchEvent() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         )}
+        {searchType === 'location' && (
+          <input
+            type="text"
+            placeholder={placeholder}
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        )}
         <select value={searchType} onChange={handleSelectChange}>
           <option value="event">Nome</option>
           <option value="category">Categoria</option>
           <option value="date">Data</option>
+          <option value="location">Local</option>
         </select>
-        <button type="button" onClick={handleSearch}>
+        <button className="btn" type="button" onClick={handleSearch}>
           Buscar
         </button>
-        <button type="button" onClick={handleClear}>
+        <button className="btn" type="button" onClick={handleClear}>
           Limpar
         </button>
       </div>
