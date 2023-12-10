@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import api from '../service/api';
 import './home.scss';
 import EventCard from '../components/eventCard/EventCard';
-// O import do Formatdate está no eventCard
 
 export default function Home() {
   const [events, setEvents] = useState([]);
@@ -26,7 +25,6 @@ export default function Home() {
   return (
     <div className="home-container">
       <h1>Eventos recentes</h1>
-      {/* Não há mais tabela em vez disso renderiza o EventCard */}
       <div className="events-container">
         {events.length === 0 ? (
           <div>
